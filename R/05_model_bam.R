@@ -26,7 +26,7 @@ system.time(mod <- bam(f,
            weights = dat$w8,
            family = betar(),
            discrete = TRUE,
-           threads = 20
+           nthreads = 20
            ))
 
 saveRDS(mod, file = here::here("working", "canada_bam_mod.rds"))
